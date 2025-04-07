@@ -25,7 +25,7 @@ export type CartItem = {
   totalPrice: number;
 };
 
-export type Testimonial = {
+export type Avaliação = {
   id: string;
   name: string;
   image: string;
