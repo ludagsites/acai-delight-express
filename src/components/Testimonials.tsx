@@ -1,9 +1,9 @@
 
 import React, { useState, useEffect, useRef } from "react";
-import { Avaliações } from "@/types";
+import { Avaliacao } from "@/types";
 
 // Mock data
-const Avaliações: Avaliações [] = [
+const testimonials: Avaliacao[] = [
   {
     id: "1",
     name: "Maria Silva",
