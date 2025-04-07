@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Product, Size } from "@/types";
 import { useCart } from "@/context/CartContext";
@@ -10,7 +9,7 @@ const flavors: Product[] = [
     name: "Açaí Tradicional",
     description: "Açaí puro da Amazônia com sabor autêntico",
     image: "https://images.unsplash.com/photo-1615484477778-ca3b77940c25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
-    price: 0, // Base price is in the size
+    price: 0,
     category: "flavor",
   },
   {
@@ -18,15 +17,15 @@ const flavors: Product[] = [
     name: "Açaí com Banana",
     description: "Açaí misturado com banana para um sabor mais suave",
     image: "https://images.unsplash.com/photo-1590080874088-eec64895b423?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
-    price: 2, // Additional charge for the banana mix
+    price: 2,
     category: "flavor",
   },
   {
     id: "flavor-3",
     name: "Açaí com Morango",
     description: "Açaí misturado com morango para um sabor mais frutado",
-    image: "https://images.unsplash.com/photo-1547514291-b0ce9bde11b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
-    price: 3, // Additional charge for the strawberry mix
+    image: "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+    price: 3,
     category: "flavor",
   },
 ];
@@ -117,7 +116,6 @@ const Menu: React.FC = () => {
   const [selectedToppings, setSelectedToppings] = useState<Product[]>([]);
   const [currentStep, setCurrentStep] = useState<'flavor' | 'size' | 'toppings'>('flavor');
 
-  // Calculate the total price
   const calculateTotal = () => {
     let total = 0;
     if (selectedFlavor) total += selectedFlavor.price;
@@ -126,7 +124,6 @@ const Menu: React.FC = () => {
     return total;
   };
 
-  // Toggle topping selection
   const toggleTopping = (topping: Product) => {
     setSelectedToppings(prev => {
       const isAlreadySelected = prev.some(item => item.id === topping.id);
@@ -139,23 +136,19 @@ const Menu: React.FC = () => {
     });
   };
 
-  // Handle flavor selection
   const handleFlavorSelect = (flavor: Product) => {
     setSelectedFlavor(flavor);
     setCurrentStep('size');
   };
 
-  // Handle size selection
   const handleSizeSelect = (size: Size) => {
     setSelectedSize(size);
     setCurrentStep('toppings');
   };
 
-  // Handle add to cart
   const handleAddToCart = () => {
     if (selectedFlavor && selectedSize) {
       addToCart(selectedFlavor, selectedSize, selectedToppings);
-      // Reset selections
       setSelectedFlavor(null);
       setSelectedSize(null);
       setSelectedToppings([]);
@@ -174,7 +167,6 @@ const Menu: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Step 1: Choose Flavor */}
           <div className={`card p-6 ${currentStep === 'flavor' ? 'ring-2 ring-acai-purple' : ''}`}>
             <div className="flex items-center mb-4">
               <div className="w-8 h-8 rounded-full bg-acai-purple text-white flex items-center justify-center font-bold">
@@ -213,7 +205,6 @@ const Menu: React.FC = () => {
             </div>
           </div>
 
-          {/* Step 2: Choose Size */}
           <div className={`card p-6 ${currentStep === 'size' ? 'ring-2 ring-acai-purple' : ''}`}>
             <div className="flex items-center mb-4">
               <div className="w-8 h-8 rounded-full bg-acai-purple text-white flex items-center justify-center font-bold">
@@ -243,7 +234,6 @@ const Menu: React.FC = () => {
             </div>
           </div>
           
-          {/* Step 3: Choose Toppings */}
           <div className={`card p-6 ${currentStep === 'toppings' ? 'ring-2 ring-acai-purple' : ''}`}>
             <div className="flex items-center mb-4">
               <div className="w-8 h-8 rounded-full bg-acai-purple text-white flex items-center justify-center font-bold">
@@ -277,7 +267,6 @@ const Menu: React.FC = () => {
               ))}
             </div>
             
-            {/* Summary and Add to Cart */}
             <div className="mt-auto">
               <div className="border-t pt-4 mb-4">
                 <div className="flex justify-between items-center font-semibold">
