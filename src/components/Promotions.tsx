@@ -26,7 +26,7 @@ const promotions: Promotion[] = [
     id: "3",
     title: "Açaí da Semana",
     description: "Açaí médio com morango, banana e leite condensado por apenas R$14,90",
-    image: "https://images.unsplash.com/photo-1676515841519-7bb498597c73?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+    image: "https://images.unsplash.com/photo-1676515841519-7bb498597c73?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
     discount: "20% OFF",
     code: "SEMANA20",
     expiryDate: "30/09/2023",
