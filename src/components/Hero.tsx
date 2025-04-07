@@ -81,8 +81,8 @@ const Hero: React.FC = () => {
           <div className="relative md:pl-12 animate-fade-in animation-delay-300">
             <div className="relative z-10 animate-float">
               <img 
-                src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
-                alt="Açaí bowl com frutas" 
+                src="https://media.discordapp.net/attachments/1313849091335393380/1358872077901496470/Sem_titulo-12.png?ex=67f56bbd&is=67f41a3d&hm=a96133f132273a9d97731cb0fa575989597a6c04b17238924cdabf127681d563&=&format=webp&quality=lossless&width=1104&height=746&auto=format&fit=crop&w=600&q=80" 
+                alt="Açaí" 
                 className="w-full h-auto rounded-3xl shadow-2xl"
               />
               
