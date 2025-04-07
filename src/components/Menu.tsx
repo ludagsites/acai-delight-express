@@ -55,17 +55,11 @@ const sizes: Size[] = [
   },
 ];
 
+// Updated toppings with categories
 const toppings: Product[] = [
+  // Frutas
   {
-    id: "topping-1",
-    name: "Granola",
-    description: "Granola crocante premium",
-    image: "https://images.unsplash.com/photo-1576097449818-aae45f387cf8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
-    price: 2,
-    category: "topping",
-  },
-  {
-    id: "topping-2",
+    id: "fruit-1",
     name: "Banana",
     description: "Banana fresca em fatias",
     image: "https://images.unsplash.com/photo-1528825871115-3581a5387919?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
@@ -73,7 +67,7 @@ const toppings: Product[] = [
     category: "topping",
   },
   {
-    id: "topping-3",
+    id: "fruit-2",
     name: "Morango",
     description: "Morangos frescos em pedaços",
     image: "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
@@ -81,15 +75,7 @@ const toppings: Product[] = [
     category: "topping",
   },
   {
-    id: "topping-4",
-    name: "Leite Condensado",
-    description: "Leite condensado cremoso",
-    image: "https://images.unsplash.com/photo-1589733955941-5eeaf752f6dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
-    price: 2,
-    category: "topping",
-  },
-  {
-    id: "topping-5",
+    id: "fruit-3",
     name: "Kiwi",
     description: "Kiwi fresco em fatias",
     image: "https://images.unsplash.com/photo-1618897996318-5a901fa6ca71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
@@ -97,7 +83,197 @@ const toppings: Product[] = [
     category: "topping",
   },
   {
-    id: "topping-6",
+    id: "fruit-4",
+    name: "Manga",
+    description: "Manga fresca em cubos",
+    image: "https://images.unsplash.com/photo-1553279768-865429fa0078?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+    price: 3,
+    category: "topping",
+  },
+  {
+    id: "fruit-5",
+    name: "Uva",
+    description: "Uvas frescas sem sementes",
+    image: "https://images.unsplash.com/photo-1596363505729-4190a9506133?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+    price: 3,
+    category: "topping",
+  },
+  {
+    id: "fruit-6",
+    name: "Abacaxi",
+    description: "Abacaxi fresco em cubos",
+    image: "https://images.unsplash.com/photo-1590502593903-ea1b2127345f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+    price: 3,
+    category: "topping",
+  },
+  
+  // Doces e Coberturas
+  {
+    id: "sweet-1",
+    name: "Leite Condensado",
+    description: "Leite condensado cremoso",
+    image: "https://images.unsplash.com/photo-1589733955941-5eeaf752f6dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+    price: 2,
+    category: "topping",
+  },
+  {
+    id: "sweet-2",
+    name: "Leite em Pó",
+    description: "Leite em pó (Ninho)",
+    image: "https://images.unsplash.com/photo-1550583724-b2692b85b150?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+    price: 2,
+    category: "topping",
+  },
+  {
+    id: "sweet-3",
+    name: "Granulado",
+    description: "Granulado de chocolate",
+    image: "https://images.unsplash.com/photo-1600326145552-327f74b9c189?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+    price: 1.5,
+    category: "topping",
+  },
+  {
+    id: "sweet-4",
+    name: "Calda de Chocolate",
+    description: "Calda de chocolate cremosa",
+    image: "https://images.unsplash.com/photo-1606313564200-e75d8e3dce2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+    price: 2,
+    category: "topping",
+  },
+  {
+    id: "sweet-5",
+    name: "Calda de Morango",
+    description: "Calda de morango fresca",
+    image: "https://images.unsplash.com/photo-1639588473831-dd9d014646ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+    price: 2,
+    category: "topping",
+  },
+  {
+    id: "sweet-6",
+    name: "Calda de Caramelo",
+    description: "Calda de caramelo doce",
+    image: "https://images.unsplash.com/photo-1607478900766-efe13248b125?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+    price: 2,
+    category: "topping",
+  },
+  {
+    id: "sweet-7",
+    name: "Nutella",
+    description: "Creme de avelã Nutella",
+    image: "https://images.unsplash.com/photo-1612187209234-3ba248db201e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+    price: 3.5,
+    category: "topping",
+  },
+  {
+    id: "sweet-8",
+    name: "Ovomaltine",
+    description: "Crocante de Ovomaltine",
+    image: "https://images.unsplash.com/photo-1587131782738-de30ea91a542?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+    price: 3,
+    category: "topping",
+  },
+  {
+    id: "sweet-9",
+    name: "Mel",
+    description: "Mel puro de abelha",
+    image: "https://images.unsplash.com/photo-1587049352851-8d4e89133924?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+    price: 2,
+    category: "topping",
+  },
+  
+  // Biscoitos e Chocolates
+  {
+    id: "cookie-1",
+    name: "Bis",
+    description: "Chocolate Bis em pedaços",
+    image: "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+    price: 3,
+    category: "topping",
+  },
+  {
+    id: "cookie-2",
+    name: "Oreo",
+    description: "Biscoito Oreo triturado",
+    image: "https://images.unsplash.com/photo-1584657330063-0d1300472d6a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+    price: 3,
+    category: "topping",
+  },
+  {
+    id: "cookie-3",
+    name: "Paçoca",
+    description: "Paçoca triturada",
+    image: "https://images.unsplash.com/photo-1585230945936-7a3bd3f3aa77?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+    price: 2.5,
+    category: "topping",
+  },
+  {
+    id: "cookie-4",
+    name: "KitKat",
+    description: "KitKat em pedaços",
+    image: "https://images.unsplash.com/photo-1582058091505-f87a2e55a40f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+    price: 3.5,
+    category: "topping",
+  },
+  {
+    id: "cookie-5",
+    name: "M&M's",
+    description: "Confeitos de chocolate M&M's",
+    image: "https://images.unsplash.com/photo-1581798459219-306e7a0a5956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+    price: 3,
+    category: "topping",
+  },
+  {
+    id: "cookie-6",
+    name: "Confetes",
+    description: "Confetes coloridos",
+    image: "https://images.unsplash.com/photo-1582060371588-5b7bed5d87e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+    price: 2,
+    category: "topping",
+  },
+  
+  // Cereais e Outros
+  {
+    id: "cereal-1",
+    name: "Granola",
+    description: "Granola crocante premium",
+    image: "https://images.unsplash.com/photo-1576097449818-aae45f387cf8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+    price: 2,
+    category: "topping",
+  },
+  {
+    id: "cereal-2",
+    name: "Sucrilhos",
+    description: "Cereal de milho crocante",
+    image: "https://images.unsplash.com/photo-1563725911583-7d108f720483?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+    price: 2,
+    category: "topping",
+  },
+  {
+    id: "cereal-3",
+    name: "Castanha de Caju",
+    description: "Castanhas de caju torradas",
+    image: "https://images.unsplash.com/photo-1524593166156-312f362cada0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+    price: 4,
+    category: "topping",
+  },
+  {
+    id: "cereal-4",
+    name: "Amendoim",
+    description: "Amendoim triturado",
+    image: "https://images.unsplash.com/photo-1569288063643-5d29ad6874f0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+    price: 2.5,
+    category: "topping",
+  },
+  {
+    id: "cereal-5",
+    name: "Coco Ralado",
+    description: "Coco ralado fresco",
+    image: "https://images.unsplash.com/photo-1562114808-b4b33cf60f4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+    price: 2,
+    category: "topping",
+  },
+  {
+    id: "cereal-6",
     name: "Castanha do Pará",
     description: "Castanhas do Pará picadas",
     image: "https://images.unsplash.com/photo-1615485500704-8e990f9901ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
@@ -116,6 +292,7 @@ const Menu: React.FC = () => {
   const [selectedSize, setSelectedSize] = useState<Size | null>(null);
   const [selectedToppings, setSelectedToppings] = useState<Product[]>([]);
   const [currentStep, setCurrentStep] = useState<'flavor' | 'size' | 'toppings'>('flavor');
+  const [activeToppingCategory, setActiveToppingCategory] = useState<string>("all");
 
   const calculateTotal = () => {
     let total = 0;
@@ -156,6 +333,20 @@ const Menu: React.FC = () => {
       setCurrentStep('flavor');
     }
   };
+
+  // Group toppings by categories
+  const toppingCategories = {
+    all: { name: "Todos", toppings: toppings },
+    fruits: { name: "🍓 Frutas", toppings: toppings.filter(t => t.id.startsWith("fruit")) },
+    sweets: { name: "🍫 Doces & Coberturas", toppings: toppings.filter(t => t.id.startsWith("sweet")) },
+    cookies: { name: "🍪 Biscoitos & Chocolates", toppings: toppings.filter(t => t.id.startsWith("cookie")) },
+    cereals: { name: "🥣 Cereais & Outros", toppings: toppings.filter(t => t.id.startsWith("cereal")) },
+  };
+
+  // Filter toppings based on selected category
+  const displayedToppings = activeToppingCategory === "all" 
+    ? toppings 
+    : toppingCategories[activeToppingCategory as keyof typeof toppingCategories].toppings;
 
   return (
     <section id="menu" className="py-20 bg-white">
@@ -242,9 +433,26 @@ const Menu: React.FC = () => {
               </div>
               <h3 className="ml-3 font-semibold text-xl">Escolha os Complementos</h3>
             </div>
+
+            {/* Topping category tabs */}
+            <div className="flex flex-wrap gap-2 mb-4">
+              {Object.entries(toppingCategories).map(([key, category]) => (
+                <button
+                  key={key}
+                  onClick={() => setActiveToppingCategory(key)}
+                  className={`text-xs px-2 py-1 rounded-full ${
+                    activeToppingCategory === key
+                      ? 'bg-acai-purple text-white'
+                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  } ${currentStep !== 'toppings' ? 'opacity-50 pointer-events-none' : ''}`}
+                >
+                  {category.name}
+                </button>
+              ))}
+            </div>
             
-            <div className="space-y-4 mb-6">
-              {toppings.map((topping) => (
+            <div className="space-y-4 mb-6 max-h-[400px] overflow-y-auto">
+              {displayedToppings.map((topping) => (
                 <div 
                   key={topping.id}
                   className={`relative rounded-xl overflow-hidden transition-all 
