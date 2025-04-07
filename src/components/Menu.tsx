@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Product, Size } from "@/types";
 import { useCart } from "@/context/CartContext";
@@ -8,7 +9,7 @@ const flavors: Product[] = [
     id: "flavor-1",
     name: "Açaí Tradicional",
     description: "Açaí puro da Amazônia com sabor autêntico",
-    image: "https://images.unsplash.com/photo-1615484477778-ca3b77940c25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+    image: "https://images.unsplash.com/photo-1676515841519-7bb498597c73?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 0,
     category: "flavor",
   },
@@ -16,7 +17,7 @@ const flavors: Product[] = [
     id: "flavor-2",
     name: "Açaí com Banana",
     description: "Açaí misturado com banana para um sabor mais suave",
-    image: "https://images.unsplash.com/photo-1590080874088-eec64895b423?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+    image: "https://images.unsplash.com/photo-1676515841519-7bb498597c73?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 2,
     category: "flavor",
   },
@@ -24,7 +25,7 @@ const flavors: Product[] = [
     id: "flavor-3",
     name: "Açaí com Morango",
     description: "Açaí misturado com morango para um sabor mais frutado",
-    image: "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+    image: "https://images.unsplash.com/photo-1676515841519-7bb498597c73?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 3,
     category: "flavor",
   },
