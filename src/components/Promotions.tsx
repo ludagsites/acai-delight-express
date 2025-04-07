@@ -8,7 +8,7 @@ const promotions: Promotion[] = [
     id: "1",
     title: "Combo Família",
     description: "4 açaís médios com até 3 complementos cada por apenas R$59,90",
-    image: "https://images.unsplash.com/photo-1615484477778-ca3b77940c25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+    image: "https://media.discordapp.net/attachments/1313849091335393380/1358880158676811996/Imagem_do_WhatsApp_de_2025-04-07_as_16.00.36_db84af19.jpg?ex=67f57344&is=67f421c4&hm=c2324e4f654a40a2d8a5c520f38548459c993444bbc7315b6f600626816a97b7&=&format=webp&width=626&height=626&auto=format&fit=crop&w=300&q=80",
     discount: "30% OFF",
     code: "FAMILIA30",
     expiryDate: "30/09/2023",
