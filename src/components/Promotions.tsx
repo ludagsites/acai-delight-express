@@ -17,7 +17,7 @@ const promotions: Promotion[] = [
     id: "2",
     title: "Combo Amigos",
     description: "2 açaís grandes com até 4 complementos cada por apenas R$39,90",
-    image: "https://media.discordapp.net/attachments/1313849091335393380/1358880158261444868/Imagem_do_WhatsApp_de_2025-04-07_as_16.01.56_8d2f2a1d.jpg?ex=67f57344&is=67f421c4&hm=c33f25076ed4c36c490d527c2cba915acae84437aa7ab93c5879f5af9b4144e4&=&format=webp&width=626&height=626&auto=format&fit=crop&w=300&q=80",
+    image: "https://media.discordapp.net/attachments/1313849091335393380/1358881005179764827/Imagem_do_WhatsApp_de_2025-04-07_as_16.01.56_8d2f2a1d.jpg?ex=67f5740e&is=67f4228e&hm=083572fe5e461c5252cb736ee480fe77096c091a692fcdf76a09120b912efc1c&=&format=webp&width=657&height=626&auto=format&fit=crop&w=300&q=80",
     discount: "25% OFF",
     code: "AMIGOS25",
     expiryDate: "30/09/2023",
