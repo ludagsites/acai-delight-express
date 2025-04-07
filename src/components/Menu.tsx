@@ -9,7 +9,7 @@ const flavors: Product[] = [
     id: "flavor-1",
     name: "Açaí Tradicional",
     description: "Açaí puro",
-    image: "https://images.unsplash.com/photo-1676515841519-7bb498597c73?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://images.unsplash.com/photo-1676515841519-7bb498597c73?q=80&w=1935",
     price: 0,
     category: "flavor",
   },
