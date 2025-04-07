@@ -94,9 +94,9 @@ const toppings = [
   },
   {
     id: "topping-6",
-    name: "Castanha de Caju",
+    name: "Castanha de caju",
     description: "Castanhas de Caju picadas",
-    image: "https://images.unsplash.com/photo-1615485500704-8e990f9901ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+    image: "https://cdn.pixabay.com/photo/2012/07/09/07/44/cashew-nut-52066_1280.jpg&auto=format&fit=crop&w=300&q=80",
     price: 4,
     category: "topping",
   },
